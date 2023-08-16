@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>MIRA IVAN</title>
+                     <link rel="preconnect" href="https://fonts.googleapis.com">
+                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"  />
+            <link rel="stylesheet" href="styles.css">
+            <link rel="stylesheet" href="reset.css">
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <div class="container">
+            <input type="checkbox" id="menu" class="container--tecla">
+        <label for="menu">
+            <span class="cabecalho_menu_hamburguer container--imagem"></span>
+        </label>
+            <ul class="lista-menu">
+            <li class="lista-menu-titulo">MIRA IVAN</li>
+            <li class="lista-menu-item">
+                <a href="#" class="lista_menu-link">MASCULINO</a>
+            </li>
+
+            <li class="lista-menu-item">
+                <a href="#" class="lista_menu-link">FEMININO</a>
+            </li>
+
+            <li class="lista-menu-item">
+                <a href="#" class="lista_menu-link">INFANTIL</a>
+            </li>
+
+            <li class="lista-menu-item">
+                <a href="#" class="lista_menu-link">MARCAS</a>
+            </li>
+
+            <li class="lista-menu-item">
+                <a href="#" class="lista_menu-link">NOVIDADES</a>
+            </li>                        
+            </ul>
+ 
+            </div>
+
+            <div class="container">
+
+                <a href="#"><img class="container--imagem" src="img/Usuário.svg" alt="Usuário"></a>
+                <a href="#"><img class="container--imagem" src="img/Favoritos.svg" alt="Favoritos"></a>
+                <a href="#"><img class="container--imagem" src="img/Compras.svg" alt="Compras"></a>
+
+
+
+
+            </div>
+          </header>
+          <section class="banner">
+                <h2 class="banner-titulo">Encontre as melhores roupas do Brasil</h2>
+                <p class="banner-texto">Embarque na aventura</p>
+                <input type="search" class="banner-pesquisa" placeholder="Pesquisa">
+          </section>
+
+          <section class="carrossel">
+            <h2 class="carrossel-titulo">ROUPAS</h2>
+          </section>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+    <!-- Additional required wrapper -->
+
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="img/levis.webp" alt="levis"></div>
+    <div class="swiper-slide"><img src="img/gap.webp" alt="gap"></div>
+    <div class="swiper-slide"><img src="img/colcci.webp" alt="colcci"></div>
+    <div class="swiper-slide"><img src="img/blusa.webp" alt="blusa"></div>
+
+    ...
+    </div>
+
+                                    
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+                                
+    </div>
+
+          <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+            <script>
+                const swiper = new Swiper('.swiper', {
+                    spaceBetween: 10,
+                    slidesPerView: 3,
+                    pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    }, 
+                });     
+
+            </script>
+
+    </body>
+
+</html>
