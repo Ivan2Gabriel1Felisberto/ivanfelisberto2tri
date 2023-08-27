@@ -12,6 +12,14 @@
     background-position: center;
 }
 
+.container--tecla:checked ~ .container_rotulo > .cabecalho_menu_hamburguer {
+    background-image: url("../img/Menu\ Aberto.svg") ;
+}
+
+.container--tecla:checked~.container_rotulo {
+    background-color: var(--azul);
+}
+
 .cabecalho {
     background-color: var(--cor-de-fundo);
     display: flex;
